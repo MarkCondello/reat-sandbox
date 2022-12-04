@@ -1,9 +1,8 @@
-// import {useState} from 'react'
 import useCustomLocalStorage from '../hooks/UseCustomLocalStorage'
 
 function CustomLocalStorageHookExample() {
  const [task, setTask] = useCustomLocalStorage('task', '');
- const [tasks, setTasks] = useCustomLocalStorage('tasksAgain', []);
+ const [tasks, setTasks] = useCustomLocalStorage('tasks', []);
 
  const handleSubmit = (e) => {
   //  console.log('handleSubmit', task)
